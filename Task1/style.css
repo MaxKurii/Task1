@@ -1,0 +1,60 @@
+body{
+  background: rebeccapurple;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 20px;
+}
+
+.ukraine{
+  width: 300px;
+  height: 143px;
+  background-image: linear-gradient(blue 50%, yellow 50%)
+}
+
+.japan{
+  width: 300px;
+  height: 143px;
+  margin-top: 10px;
+  background: radial-gradient(circle, red 58px, #fff 60px);
+}
+
+.czech_republic{
+  margin-top: 10px;
+  width: 300px;
+  height: 143px;
+  background:
+    linear-gradient(to bottom, white 50% , red 50%);
+}
+
+.czech_republic::after{
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 72px solid transparent;
+  border-left: 140px solid blue;
+  border-bottom: 72px solid transparent;
+}
+
+.iceland{
+  margin-top: 10px;
+  width: 300px;
+  height: 145px;
+  background: 
+    linear-gradient(blue,blue) 0 0      /50px 50px,
+    linear-gradient(blue,blue) 0 100%   /50px 50px,
+    linear-gradient(blue,blue) 100% 0   /205px 50px,
+    linear-gradient(blue,blue) 100% 100%/205px 50px,
+
+    linear-gradient(red,red)   60px 0/ 25px 100%,
+    linear-gradient(red,red)   0 60px/ 100% 25px,
+
+    linear-gradient(white,white) 50px 0  / 10px 100%,
+    linear-gradient(white,white)   0 50px/ 100% 10px,
+    linear-gradient(white,white) 85px 0  / 10px 100%,
+    linear-gradient(white,white)   0 85px/ 100% 10px;
+    background-repeat:no-repeat;
+}
+
